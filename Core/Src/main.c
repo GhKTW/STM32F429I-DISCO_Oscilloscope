@@ -37,9 +37,9 @@
 #define REFRESH_COUNT           ((uint32_t)1386)   /* SDRAM refresh counter */
 #define SDRAM_TIMEOUT           ((uint32_t)0xFFFF)
 
-#define SCALE_DEFAULT 10
-#define SCALE_ZOOM 5
-#define SCALE_ZOOM_MORE 2
+#define SCALE_DEFAULT 13
+#define SCALE_ZOOM 6
+#define SCALE_ZOOM_MORE 3
 
 /**
   * @brief  FMC SDRAM Mode definition register defines
@@ -154,10 +154,12 @@ static LCD_DrvTypeDef* LcdDrv;
 uint32_t I2c3Timeout = I2C3_TIMEOUT_MAX; /*<! Value of Timeout when I2C communication fails */
 uint32_t Spi5Timeout = SPI5_TIMEOUT_MAX; /*<! Value of Timeout when SPI communication fails */
 
-unsigned short scaler = 10;
-unsigned short buf[3000];
-unsigned short buf_size = 3000;
+unsigned short scaler = SCALE_DEFAULT;
+unsigned short buf[6000];
+unsigned short buf_size = 6000;
 unsigned short bDrawTransition = 1;
+int scalerStateT = 0;
+int center = 0;
 /* USER CODE END 0 */
 
 /**
@@ -1044,6 +1046,7 @@ void LCD_Delay(uint32_t Delay)
 
 void scaler_zoomIn()
 {
+  scalerStateT = 1;
   switch (scaler)
   {
   case SCALE_DEFAULT:
@@ -1062,6 +1065,7 @@ void scaler_zoomIn()
 
 void scaler_zoomOut()
 {
+  scalerStateT = 1;
   switch (scaler)
   {
   case SCALE_ZOOM_MORE:
@@ -1097,6 +1101,14 @@ void StartDefaultTask(void *argument)
   for(;;)
   {
     HAL_ADC_Start_DMA(&hadc1, (uint16_t *)buf, buf_size);
+    for (int i = 2500; i < 3500; i++) {
+    	if (buf[i] < 1240 && buf[i + 1] >= 1240) {
+    		center = i;
+    		break;
+    	}
+    	else
+    		center = 3000;
+    }
     osDelay(1);
   }
   /* USER CODE END 5 */

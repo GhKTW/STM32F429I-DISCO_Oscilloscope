@@ -28,6 +28,7 @@ public:
     virtual ~Screen1Presenter() {}
 
     void updateBuffer();
+    void updateScaler();
 
 private:
     Screen1Presenter();

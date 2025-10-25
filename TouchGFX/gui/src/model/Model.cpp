@@ -2,10 +2,10 @@
 #include <gui/model/ModelListener.hpp>
 
 extern "C" {
-	extern unsigned short buf[3000];
+	extern unsigned short buf[6000];
 	extern unsigned short buf_size;
 	extern unsigned short scaler;
-	extern unsigned short bDrawTransition;
+	extern int scalerStateT;
 }
 
 
@@ -21,6 +21,11 @@ void Model::tick()
 		modelListener->updateBuffer();
 		counter = 0;
 	}
+	if (scalerStateT == 1) {
+		scalerStateT = 0;
+		modelListener->updateScaler();
+
+	}
 
 }
 
@@ -34,12 +39,3 @@ unsigned short* Model::getBuf()
    return buf;
 }
 
-unsigned short Model::getScaler()
-{
-	return scaler;
-}
-
-unsigned short Model::getDrawState()
-{
-	return bDrawTransition;
-}

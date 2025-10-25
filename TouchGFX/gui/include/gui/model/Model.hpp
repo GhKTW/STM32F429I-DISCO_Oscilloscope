@@ -17,8 +17,6 @@ public:
 
     unsigned short getBufSize();
     unsigned short* getBuf();
-    unsigned short getScaler();
-    unsigned short getDrawState();
 protected:
     ModelListener* modelListener;
 };

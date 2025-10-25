@@ -222,11 +222,12 @@
             "Components": [
               {
                 "Type": "TextArea",
-                "Name": "textArea1_1_1",
-                "X": 149,
-                "Width": 43,
-                "Height": 9,
-                "TextId": "__SingleUse_60R9",
+                "Name": "secondperdivision",
+                "X": 141,
+                "Y": 24,
+                "Width": 47,
+                "Height": 11,
+                "TextId": "1000us",
                 "TextRotation": "0",
                 "Color": {
                   "Red": 255,
@@ -303,7 +304,7 @@
             "Action": {
               "Type": "ActionExecuteCode",
               "Includes": "#include \"main.h\"",
-              "Code": "scaler_zoomIn();"
+              "Code": "scaler_zoomIn();\r\n"
             }
           },
           {
@@ -315,17 +316,6 @@
             "Action": {
               "Type": "ActionExecuteCode",
               "Code": "scaler_zoomOut();"
-            }
-          },
-          {
-            "InteractionName": "Interaction1",
-            "Trigger": {
-              "Type": "TriggerClicked",
-              "TriggerComponent": "pause"
-            },
-            "Action": {
-              "Type": "ActionExecuteCode",
-              "Code": "drawTransition();"
             }
           }
         ]

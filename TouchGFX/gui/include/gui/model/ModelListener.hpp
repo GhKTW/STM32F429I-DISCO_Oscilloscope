@@ -16,6 +16,7 @@ public:
     }
 
     virtual void updateBuffer() {}
+    virtual void updateScaler() {}
 protected:
     Model* model;
 };

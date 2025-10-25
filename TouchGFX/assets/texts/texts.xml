@@ -6,6 +6,15 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
+      <Text Id="250us" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">250 us/div</Translation>
+      </Text>
+      <Text Id="500us" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">500 us/div</Translation>
+      </Text>
+      <Text Id="1000us" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">1000 us/div</Translation>
+      </Text>
       <Text Id="__SingleUse_M9CX" Alignment="Center" TypographyId="Large">
         <Translation Language="GB">||</Translation>
       </Text>
@@ -17,9 +26,6 @@
       </Text>
       <Text Id="__SingleUse_2CAU" Alignment="Left" TypographyId="Small">
         <Translation Language="GB">3v</Translation>
-      </Text>
-      <Text Id="__SingleUse_60R9" Alignment="Left" TypographyId="Small">
-        <Translation Language="GB">825 us/div</Translation>
       </Text>
       <Text Id="__SingleUse_41V0" Alignment="Center" TypographyId="Large">
         <Translation Language="GB">+</Translation>
@@ -51,5 +57,6 @@
     <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
     <Typography Id="Small" Font="verdana.ttf" Size="8" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
     <Typography Id="Large" Font="verdanab.ttf" Size="17" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Typography_00" Font="calibri.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
   </Typographies>
 </TextDatabase>

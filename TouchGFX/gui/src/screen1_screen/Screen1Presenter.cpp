@@ -21,9 +21,12 @@ void Screen1Presenter::updateBuffer()
 {
 	unsigned short buf_size = model->getBufSize();
 	unsigned short* buf = model->getBuf();
-	unsigned short scaler = model->getScaler();
-	unsigned short DrawState = model->getDrawState();
 
-	view.drawValue(buf, buf_size, scaler, DrawState);
+	view.drawValue(buf, buf_size);
 
 }
+void Screen1Presenter::updateScaler()
+{
+	view.printScale();
+}
+
