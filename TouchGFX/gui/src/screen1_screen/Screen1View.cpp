@@ -15,13 +15,15 @@ void Screen1View::tearDownScreen()
     Screen1ViewBase::tearDownScreen();
 }
 
-void Screen1View::drawValue(unsigned short* buf, unsigned short buf_size, unsigned short scaler)
+void Screen1View::drawValue(unsigned short* buf, unsigned short buf_size, unsigned short scaler, unsigned short DrawState)
 {
-	dynamicGraph1.clear();
-	for (int i = 0; i < 300; i++)
-	{
-		float v = float((buf[i * scaler]) / 4095.0f) * 50.0f + 30;
-		dynamicGraph1.addDataPoint(v);
+	if (DrawState) {
+		dynamicGraph1.clear();
+		for (int i = 0; i < 300; i++)
+		{
+			float v = float((buf[i * scaler]) / 4095.0f) * 50.0f + 30;
+			dynamicGraph1.addDataPoint(v);
+		}
+		dynamicGraph1.invalidate();
 	}
-    dynamicGraph1.invalidate();
 }

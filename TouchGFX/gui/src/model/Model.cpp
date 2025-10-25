@@ -5,6 +5,7 @@ extern "C" {
 	extern unsigned short buf[3000];
 	extern unsigned short buf_size;
 	extern unsigned short scaler;
+	extern unsigned short bDrawTransition;
 }
 
 
@@ -33,6 +34,12 @@ unsigned short* Model::getBuf()
    return buf;
 }
 
-unsigned short Model::getScaler() {
+unsigned short Model::getScaler()
+{
 	return scaler;
+}
+
+unsigned short Model::getDrawState()
+{
+	return bDrawTransition;
 }

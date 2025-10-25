@@ -238,7 +238,7 @@
           },
           {
             "Type": "ButtonWithLabel",
-            "Name": "buttonWithLabel1",
+            "Name": "zoom_In",
             "X": 284,
             "Width": 36,
             "Height": 36,
@@ -257,13 +257,31 @@
           },
           {
             "Type": "ButtonWithLabel",
-            "Name": "buttonWithLabel1_1",
+            "Name": "zoom_out",
             "X": 239,
             "Width": 36,
             "Height": 36,
             "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
             "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_normal.png",
             "TextId": "__SingleUse_9JFF",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 153
+            },
+            "PressedColor": {
+              "Red": 89,
+              "Green": 54
+            },
+            "TextRotation": "0"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "pause",
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_normal.png",
+            "TextId": "__SingleUse_M9CX",
             "ReleasedColor": {
               "Red": 255,
               "Green": 153
@@ -280,7 +298,7 @@
             "InteractionName": "zoomIn",
             "Trigger": {
               "Type": "TriggerClicked",
-              "TriggerComponent": "buttonWithLabel1"
+              "TriggerComponent": "zoom_In"
             },
             "Action": {
               "Type": "ActionExecuteCode",
@@ -292,11 +310,22 @@
             "InteractionName": "zoomOut",
             "Trigger": {
               "Type": "TriggerClicked",
-              "TriggerComponent": "buttonWithLabel1_1"
+              "TriggerComponent": "zoom_out"
             },
             "Action": {
               "Type": "ActionExecuteCode",
               "Code": "scaler_zoomOut();"
+            }
+          },
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "pause"
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Code": "drawTransition();"
             }
           }
         ]

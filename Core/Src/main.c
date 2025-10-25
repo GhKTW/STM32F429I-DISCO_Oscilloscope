@@ -116,6 +116,7 @@ extern void TouchGFX_Task(void *argument);
 /* USER CODE BEGIN PFP */
 void scaler_zoomIn();
 void scaler_zoomOut();
+void drawTransition();
 static void BSP_SDRAM_Initialization_Sequence(SDRAM_HandleTypeDef *hsdram, FMC_SDRAM_CommandTypeDef *Command);
 
 
@@ -156,6 +157,7 @@ uint32_t Spi5Timeout = SPI5_TIMEOUT_MAX; /*<! Value of Timeout when SPI communic
 unsigned short scaler = 10;
 unsigned short buf[3000];
 unsigned short buf_size = 3000;
+unsigned short bDrawTransition = 1;
 /* USER CODE END 0 */
 
 /**
@@ -1074,6 +1076,10 @@ void scaler_zoomOut()
   default:
     break;
   }
+}
+
+void drawTransition(){
+	bDrawTransition = !bDrawTransition;
 }
 /* USER CODE END 4 */
 

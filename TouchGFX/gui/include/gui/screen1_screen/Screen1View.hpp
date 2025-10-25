@@ -12,7 +12,8 @@ public:
     virtual void setupScreen();
     virtual void tearDownScreen();
 
-    void drawValue(unsigned short* buf, unsigned short buf_size, unsigned short scaler);
+    void drawValue(unsigned short* buf, unsigned short buf_size,
+    		unsigned short scaler, unsigned short DrawState);
 protected:
 };
 

@@ -56,6 +56,7 @@ void Error_Handler(void);
 /* USER CODE BEGIN EFP */
 void scaler_zoomIn();
 void scaler_zoomOut();
+void drawTransition();
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
