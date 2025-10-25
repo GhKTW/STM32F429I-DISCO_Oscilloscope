@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="texts.xsd" Version="4.25.0">
+  <Languages>
+    <Language Id="GB" />
+  </Languages>
+  <Texts>
+    <TextGroup Id="Group1" />
+    <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_6DZ7" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">1 v&#10;/div</Translation>
+      </Text>
+      <Text Id="__SingleUse_D8A8" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">GND</Translation>
+      </Text>
+      <Text Id="__SingleUse_2CAU" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">3v</Translation>
+      </Text>
+      <Text Id="__SingleUse_60R9" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">825 us/div</Translation>
+      </Text>
+      <Text Id="__SingleUse_41V0" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB">+</Translation>
+      </Text>
+      <Text Id="__SingleUse_9JFF" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB">-</Translation>
+      </Text>
+      <Text Id="__SingleUse_7GXC" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">3v</Translation>
+      </Text>
+      <Text Id="__SingleUse_X5OM" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">GND</Translation>
+      </Text>
+      <Text Id="__SingleUse_G640" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">1 v&#10;/div</Translation>
+      </Text>
+      <Text Id="__SingleUse_V9EZ" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">825 us/div</Translation>
+      </Text>
+      <Text Id="__SingleUse_BJQM" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB">+</Translation>
+      </Text>
+      <Text Id="__SingleUse_ZU5A" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB">-</Translation>
+      </Text>
+    </TextGroup>
+  </Texts>
+  <Typographies>
+    <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Small" Font="verdana.ttf" Size="8" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Large" Font="verdanab.ttf" Size="17" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+  </Typographies>
+</TextDatabase>

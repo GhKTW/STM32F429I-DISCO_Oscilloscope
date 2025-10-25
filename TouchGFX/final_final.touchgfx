@@ -1,0 +1,646 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "Screen1",
+        "CanvasBufferSize": 4800,
+        "Components": [
+          {
+            "Type": "Shape",
+            "Name": "shape1",
+            "Width": 320,
+            "Height": 240,
+            "Points": [
+              {},
+              {
+                "X": 320.0
+              },
+              {
+                "X": 320.0,
+                "Y": 240.0
+              },
+              {
+                "Y": 240.0
+              }
+            ],
+            "XScale": 1.0,
+            "YScale": 1.0
+          },
+          {
+            "Type": "Container",
+            "Name": "grph_conatiner",
+            "X": 20,
+            "Y": 40,
+            "Width": 300,
+            "Height": 200,
+            "Components": [
+              {
+                "Type": "DynamicGraph",
+                "Name": "dynamicGraph1",
+                "Width": 300,
+                "Height": 200,
+                "DataSeed": -1889237859,
+                "NumberOfValues": 300,
+                "MaxY": 100.0,
+                "Precision": "1",
+                "LastIndex": 299,
+                "XAxisScale": 1.0,
+                "GraphType": "GraphWrapClear",
+                "GraphDrawers": [
+                  {
+                    "Type": "LineDrawer",
+                    "LineWidth": 2,
+                    "FileNameImage": "",
+                    "Color": {
+                      "Green": 255
+                    }
+                  }
+                ],
+                "XAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Color": {
+                    "Red": 255,
+                    "Green": 255,
+                    "Blue": 255
+                  },
+                  "Interval": 50.0,
+                  "LineWidth": 1
+                },
+                "MinorXAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Color": {
+                    "Red": 255,
+                    "Green": 255,
+                    "Blue": 255
+                  },
+                  "Interval": 25.0,
+                  "LineWidth": 1,
+                  "Alpha": 100
+                },
+                "YAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Color": {
+                    "Red": 255,
+                    "Green": 255,
+                    "Blue": 255
+                  },
+                  "Interval": 30.0,
+                  "LineWidth": 1
+                },
+                "MinorYAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Color": {
+                    "Red": 255,
+                    "Green": 255,
+                    "Blue": 255
+                  },
+                  "Interval": 15.0,
+                  "LineWidth": 1,
+                  "Alpha": 100
+                }
+              },
+              {
+                "Type": "Shape",
+                "Name": "shape2",
+                "Y": 105,
+                "Width": 10,
+                "Height": 10,
+                "Color": {
+                  "Red": 255,
+                  "Green": 153
+                },
+                "Points": [
+                  {},
+                  {
+                    "X": 5.0,
+                    "Y": 5.0
+                  },
+                  {
+                    "Y": 10.0
+                  }
+                ],
+                "XScale": 1.0,
+                "YScale": 1.0
+              },
+              {
+                "Type": "Shape",
+                "Name": "shape3",
+                "X": 145,
+                "Width": 10,
+                "Height": 10,
+                "Color": {
+                  "Red": 255,
+                  "Green": 153
+                },
+                "Points": [
+                  {},
+                  {
+                    "X": 10.0
+                  },
+                  {
+                    "X": 5.0,
+                    "Y": 5.0
+                  }
+                ],
+                "XScale": 1.0,
+                "YScale": 1.0
+              },
+              {
+                "Type": "Line",
+                "Name": "line1",
+                "Y": 49,
+                "Width": 300,
+                "Height": 151,
+                "Color": {
+                  "Red": 255,
+                  "Green": 153
+                },
+                "EndX": 300.0,
+                "LineWidth": 1.0,
+                "LineEndingStyle": "Round"
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "container1",
+            "Y": 40,
+            "Width": 20,
+            "Height": 200,
+            "Components": [
+              {
+                "Type": "TextArea",
+                "Name": "textArea1",
+                "X": 4,
+                "Y": 45,
+                "Width": 10,
+                "Height": 9,
+                "TextId": "__SingleUse_2CAU",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 153
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textArea1_1",
+                "X": 1,
+                "Y": 134,
+                "Width": 18,
+                "Height": 9,
+                "TextId": "__SingleUse_D8A8",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 153
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textArea1_1_1_1",
+                "X": 3,
+                "Width": 16,
+                "Height": 18,
+                "TextId": "__SingleUse_6DZ7",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 153
+                },
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "container2",
+            "Width": 320,
+            "Height": 40,
+            "Components": [
+              {
+                "Type": "TextArea",
+                "Name": "textArea1_1_1",
+                "X": 149,
+                "Width": 43,
+                "Height": 9,
+                "TextId": "__SingleUse_60R9",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 153
+                },
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonWithLabel1",
+            "X": 284,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_normal.png",
+            "TextId": "__SingleUse_41V0",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 153
+            },
+            "PressedColor": {
+              "Red": 89,
+              "Green": 54
+            },
+            "TextRotation": "0"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonWithLabel1_1",
+            "X": 239,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_normal.png",
+            "TextId": "__SingleUse_9JFF",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 153
+            },
+            "PressedColor": {
+              "Red": 89,
+              "Green": 54
+            },
+            "TextRotation": "0"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "zoomIn",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonWithLabel1"
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Includes": "#include \"main.h\"",
+              "Code": "scaler_zoomIn();"
+            }
+          },
+          {
+            "InteractionName": "zoomOut",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonWithLabel1_1"
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Code": "scaler_zoomOut();"
+            }
+          }
+        ]
+      }
+    ],
+    "CustomContainerDefinitions": [
+      {
+        "Name": "CustomContainer1",
+        "X": -40,
+        "Y": 40,
+        "Width": 320,
+        "Height": 240,
+        "Includes": "",
+        "Components": [
+          {
+            "Type": "Shape",
+            "Name": "shape1",
+            "Width": 320,
+            "Height": 240,
+            "Points": [
+              {},
+              {
+                "X": 320.0
+              },
+              {
+                "X": 320.0,
+                "Y": 240.0
+              },
+              {
+                "Y": 240.0
+              }
+            ],
+            "XScale": 1.0,
+            "YScale": 1.0
+          },
+          {
+            "Type": "Container",
+            "Name": "grph_conatiner",
+            "X": 20,
+            "Y": 40,
+            "Width": 300,
+            "Height": 200,
+            "Components": [
+              {
+                "Type": "DynamicGraph",
+                "Name": "dynamicGraph1",
+                "Width": 300,
+                "Height": 200,
+                "DataSeed": -1889237859,
+                "NumberOfValues": 300,
+                "MaxY": 100.0,
+                "Precision": "1",
+                "LastIndex": 299,
+                "XAxisScale": 1.0,
+                "GraphType": "GraphWrapClear",
+                "GraphDrawers": [
+                  {
+                    "Type": "LineDrawer",
+                    "LineWidth": 2,
+                    "FileNameImage": "",
+                    "Color": {
+                      "Green": 255
+                    }
+                  }
+                ],
+                "XAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Color": {
+                    "Red": 255,
+                    "Green": 255,
+                    "Blue": 255
+                  },
+                  "Interval": 50.0,
+                  "LineWidth": 1
+                },
+                "MinorXAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Color": {
+                    "Red": 255,
+                    "Green": 255,
+                    "Blue": 255
+                  },
+                  "Interval": 25.0,
+                  "LineWidth": 1,
+                  "Alpha": 100
+                },
+                "YAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Color": {
+                    "Red": 255,
+                    "Green": 255,
+                    "Blue": 255
+                  },
+                  "Interval": 30.0,
+                  "LineWidth": 1
+                },
+                "MinorYAxisGrid": {
+                  "Type": "GraphGrid",
+                  "Color": {
+                    "Red": 255,
+                    "Green": 255,
+                    "Blue": 255
+                  },
+                  "Interval": 15.0,
+                  "LineWidth": 1,
+                  "Alpha": 100
+                }
+              },
+              {
+                "Type": "Shape",
+                "Name": "shape2",
+                "Y": 105,
+                "Width": 10,
+                "Height": 10,
+                "Color": {
+                  "Red": 255,
+                  "Green": 153
+                },
+                "Points": [
+                  {},
+                  {
+                    "X": 5.0,
+                    "Y": 5.0
+                  },
+                  {
+                    "Y": 10.0
+                  }
+                ],
+                "XScale": 1.0,
+                "YScale": 1.0
+              },
+              {
+                "Type": "Shape",
+                "Name": "shape3",
+                "X": 145,
+                "Width": 10,
+                "Height": 10,
+                "Color": {
+                  "Red": 255,
+                  "Green": 153
+                },
+                "Points": [
+                  {},
+                  {
+                    "X": 10.0
+                  },
+                  {
+                    "X": 5.0,
+                    "Y": 5.0
+                  }
+                ],
+                "XScale": 1.0,
+                "YScale": 1.0
+              },
+              {
+                "Type": "Line",
+                "Name": "line1",
+                "Y": 49,
+                "Width": 300,
+                "Height": 151,
+                "Color": {
+                  "Red": 255,
+                  "Green": 153
+                },
+                "EndX": 300.0,
+                "LineWidth": 1.0,
+                "LineEndingStyle": "Round"
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "container1",
+            "Y": 40,
+            "Width": 20,
+            "Height": 200,
+            "Components": [
+              {
+                "Type": "TextArea",
+                "Name": "textArea1",
+                "X": 4,
+                "Y": 45,
+                "Width": 10,
+                "Height": 9,
+                "TextId": "__SingleUse_7GXC",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 153
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textArea1_1",
+                "X": 1,
+                "Y": 134,
+                "Width": 18,
+                "Height": 9,
+                "TextId": "__SingleUse_X5OM",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 153
+                },
+                "AutoSize": true
+              },
+              {
+                "Type": "TextArea",
+                "Name": "textArea1_1_1_1",
+                "X": 3,
+                "Width": 16,
+                "Height": 18,
+                "TextId": "__SingleUse_G640",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 153
+                },
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "Container",
+            "Name": "container2",
+            "Width": 320,
+            "Height": 40,
+            "Components": [
+              {
+                "Type": "TextArea",
+                "Name": "textArea1_1_1",
+                "X": 149,
+                "Width": 43,
+                "Height": 9,
+                "TextId": "__SingleUse_V9EZ",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 153
+                },
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonWithLabel1",
+            "X": 284,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_normal.png",
+            "TextId": "__SingleUse_BJQM",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 153
+            },
+            "PressedColor": {
+              "Red": 89,
+              "Green": 54
+            },
+            "TextRotation": "0"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonWithLabel1_1",
+            "X": 239,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_disabled.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_normal.png",
+            "TextId": "__SingleUse_ZU5A",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 153
+            },
+            "PressedColor": {
+              "Red": 89,
+              "Green": 54
+            },
+            "TextRotation": "0"
+          }
+        ],
+        "Interactions": []
+      }
+    ],
+    "Name": "final_final",
+    "Resolution": {
+      "Width": 240,
+      "Height": 320
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "Screen1",
+    "SelectedStartupLanguage": "GB",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 240,
+        "Height": 320
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "CompileTargetCommandOverride": "make -f ../gcc/Makefile -j8",
+    "FlashTargetCommandOverride": "make -f ../gcc/Makefile flash",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape",
+    "Family": "STM32F4",
+    "SubFamily": "STM32F429/439",
+    "Toolchain": "STM32CubeIDE",
+    "Platform": "m4",
+    "ProjectFile": "../STM32F429I_DISCO_REV_D01.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": [],
+    "AdditionalFeatures": [
+      "CWRVector",
+      "VectorFonts"
+    ]
+  },
+  "Version": "4.25.0",
+  "CreatedBy": "4.25.0"
+}
