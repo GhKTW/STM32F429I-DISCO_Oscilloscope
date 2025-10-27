@@ -317,6 +317,17 @@
               "Type": "ActionExecuteCode",
               "Code": "scaler_zoomOut();"
             }
+          },
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "pause"
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Code": "drawTransition();"
+            }
           }
         ]
       }
