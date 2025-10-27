@@ -7,4 +7,4 @@ This TBS is configured for 320 x 240 pixels 16bpp screen resolution.
 Performance testing can be done using the GPIO pins designated with the following signals: VSYNC_FREQ  - Pin PE2, RENDER_TIME - Pin PE3, FRAME_RATE  - Pin PE4, MCU_ACTIVE  - Pin PE5
 
 
-!(image)[https://github.com/GhKTW/STM32F429I-DISCO_Oscilloscope/blob/main/assets/activating.gif]
+![image](https://github.com/GhKTW/STM32F429I-DISCO_Oscilloscope/blob/main/assets/activating.gif)
